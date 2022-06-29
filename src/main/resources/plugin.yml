@@ -1,0 +1,6 @@
+name: Examples
+version: '${project.version}'
+main: me.youhavetrouble.examples.Examples
+api-version: 1.13
+authors: [ YouHaveTrouble ]
+website: youhavetrouble.me
