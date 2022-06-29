@@ -26,6 +26,9 @@ public class ArrowTpToFirstHitListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void onFirstTimeHitEntityWithArrow(ProjectileHitEvent event) {
 
+        // Do nothing if projectile hit a block
+        if (event.getHitEntity() == null) return;
+
         // Check if the projectile is arrow, do nothing if not
         if (!(event.getEntity() instanceof Arrow arrow)) return;
 
@@ -53,6 +56,9 @@ public class ArrowTpToFirstHitListener implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void onFirstTimeHitEntityWithArrowTwo(ProjectileHitEvent event) {
+
+        // Do nothing if projectile hit a block
+        if (event.getHitEntity() == null) return;
 
         // Check if the projectile is arrow, do nothing if not
         if (!(event.getEntity() instanceof Arrow arrow)) return;
