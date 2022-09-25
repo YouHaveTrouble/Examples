@@ -19,6 +19,9 @@ import org.bukkit.loot.LootTable;
 
 import java.util.*;
 
+/**
+ * Instead of spawning a mob from a spawner, put its loot in the container right below the spawner if there is one.
+ */
 public class LootFromSpawnersToChestListener implements Listener {
     private final Random random = new Random();
     private final Entity dummyEntity;
