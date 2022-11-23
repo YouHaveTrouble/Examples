@@ -12,6 +12,7 @@ import org.bukkit.event.inventory.InventoryType;
 /**
  * An example on how to handle denying putting shulker box inside ender chest with minimal impact on regular experience.
  * You should still be able to move and drag the shulker in the bottom inventory
+ * WARNING! This is untested. Use at your own risk.
  */
 public class PreventShulkersInEnderChest implements Listener {
 
